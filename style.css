@@ -1,0 +1,154 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.container{
+    position: absolute;
+    top: 50px;
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.felipe-image{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.felipe-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 6px #FF0000;
+}
+
+.buttons-container{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.buttons-container img {
+    margin-bottom: 14px;
+    margin-top: 10px;
+    color: #ff4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    gap: 50px;
+   
+}
+
+
+
+.instagram-btn, .tiktok-btn, .minha-playlist-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ff4444;
+    border-radius: 25px;
+    height: 45px;
+    width: 500px;
+    margin-top: 20px;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 5px #ff4444;
+}
+
+.instagram-btn:hover,.tiktok-btn:hover ,.minha-playlist-btn:hover{
+    animation-name: wobble-skew;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: top left, bottom right, top right, bottom left;
+}
+
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    margin-block: -20px;
+}
+
+
+.social-container img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.instagram-btn img{
+    margin-left: 10px;
+}
+
+.tiktok-btn img{
+    margin-left: -20px;
+}
+
+.minha-playlist-btn img{
+    margin-left: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@keyframes wobble-skew{
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-1%, 0, 0) skewX(12deg);
+    }
+
+    50% {
+        transform: translate3d(1%, 0, 0) skewX(-12deg);
+    }
+
+    25% {
+        transform: translate3d(-1%, 0, 0) skewX(12deg);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .instagram-btn, .tiktok-btn, .minha-playlist-btn{
+        width: 450px;
+
+    }
+        
+    
+}

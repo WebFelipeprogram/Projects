@@ -1,0 +1,26 @@
+body{
+    background: #000;
+}
+
+.felipe-image{
+    color: #fff;
+}
+
+.felipe-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px #FF0000;
+}
+
+.buttons-container{
+    color: #fff;
+}
+
+
+.social-container{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
